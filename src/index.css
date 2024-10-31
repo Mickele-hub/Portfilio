@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+.rgb-border {
+  @apply border-4 border-transparent;
+  background-image: linear-gradient(to right, #ff00ff, #00ffff, #ffff00);
+  background-clip: padding-box;
+  position: relative;
+}
+
+.rgb-border::after {
+  content: '';
+  position: absolute;
+  top: -4px; right: -4px; bottom: -4px; left: -4px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.7;
+}
+
+.hover-zoom {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+.hover-zoom:hover {
+  @apply transform scale-110;
+}
+
+/* styles.css */
+.custom-blur {
+  filter: blur(150px); /* Ajuste cette valeur pour un flou encore plus prononcé */
+}
