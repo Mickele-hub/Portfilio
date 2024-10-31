@@ -9,7 +9,7 @@ const About: React.FC = () => {
           <div className="md:w-1/2 mb-8 md:mb-0">
             <div className="w-48 h-48 mx-auto bg-gray-700 rounded-full flex items-center justify-center overflow-hidden border border-gray-500 shadow-lg">
               <img 
-                src="/src/components/image/photo(1)(1).png" 
+                src="https://github.com/Mickele-hub/Portfilio/blob/main/src/components/image/photo(1)(1).png" 
                 alt="Ma photo" 
                 className="w-full h-full object-cover"
               />
