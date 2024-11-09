@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
             <Mail size={24} className="text-blue-500 mr-2" />
             <span className="text-white">Email</span>
           </a>
-          <a href="https://wa.me/0389215928" target="_blank" className="flex items-center bg-gray-800 p-4 rounded-lg hover-zoom">
+          <a href="https://wa.me/+261389215928" target="_blank" className="flex items-center bg-gray-800 p-4 rounded-lg hover-zoom">
             <Phone size={24} className="text-green-500 mr-2" />
             <span className="text-white">WhatsApp</span>
           </a>
